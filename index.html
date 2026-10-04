@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIBRA — Movimiento · Bienestar · Presencia | Yoga, Pilates & Vida Consciente</title>
+  <meta name="description" content="Una forma de habitar tu cuerpo, estés donde estés. Clases de Yoga, Pilates, Stretching y Movimiento desde cero por Joana & Yoshi en Necochea y online.">
+  <meta name="keywords" content="Vibra, Yoga, Pilates, Stretching, Movimiento desde cero, Bienestar, Necochea, Clases online, Tienda Vibra">
+  <meta property="og:title" content="VIBRA — Movimiento · Bienestar · Presencia">
+  <meta property="og:description" content="Una forma de habitar tu cuerpo, estés donde estés. Descubrí nuestras prácticas y clases gratuitas en YouTube.">
+  <meta property="og:image" content="assets/hero-woman-beach.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon Lotus SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path fill='%234F5E4B' d='M50 15 C45 35 30 45 10 50 C30 55 45 65 50 85 C55 65 70 55 90 50 C70 45 55 35 50 15 Z'/></svg>">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar (30s impact helper & Quick Channel Link) -->
+  <aside class="top-notice-bar" aria-label="Aviso de novedades">
+    <span class="pill-tag">Nuevo</span>
+    <span>Empezá hoy con nuestra clase gratuita en YouTube · <strong>Movimiento desde cero</strong></span>
+    <a href="#movimiento-desde-cero">Ver clase</a>
+  </aside>
+
+  <!-- Main Sticky Header -->
+  <header class="site-header" id="topHeader">
+    <div class="nav-container">
+      <!-- Brand Logo -->
+      <a href="#inicio" class="brand-logo-wrap" aria-label="Vibra - Inicio">
+        <svg class="brand-lotus-icon" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Elegant Lotus Icon -->
+          <path d="M50 8 C48 24 38 42 22 52 C36 50 46 36 50 8 Z" fill="currentColor"/>
+          <path d="M50 8 C52 24 62 42 78 52 C64 50 54 36 50 8 Z" fill="currentColor"/>
+          <path d="M50 2 C44 26 40 48 50 64 C60 48 56 26 50 2 Z" fill="currentColor" opacity="0.85"/>
+          <path d="M22 52 C12 55 4 64 6 74 C16 75 32 64 36 54 C31 54 26 53 22 52 Z" fill="currentColor" opacity="0.7"/>
+          <path d="M78 52 C88 55 96 64 94 74 C84 75 68 64 64 54 C69 54 74 53 78 52 Z" fill="currentColor" opacity="0.7"/>
+          <path d="M50 64 C35 68 25 76 28 80 C40 80 50 72 50 64 Z" fill="currentColor" opacity="0.6"/>
+          <path d="M50 64 C65 68 75 76 72 80 C60 80 50 72 50 64 Z" fill="currentColor" opacity="0.6"/>
+        </svg>
+        <div class="brand-text-block">
+          <span class="brand-name">V I B R A</span>
+          <span class="brand-tagline">MOVIMIENTO · BIENESTAR · PRESENCIA</span>
+        </div>
+      </a>
+
+      <!-- Primary Navigation -->
+      <nav class="main-navigation" id="mainNav" aria-label="Navegación principal">
+        <a href="#inicio" class="nav-link active">Inicio</a>
+        <a href="#caminos" class="nav-link">Qué encontrás</a>
+        <a href="#metodo" class="nav-link">Nuestro método</a>
+        <a href="#quienes-somos" class="nav-link">Quiénes somos</a>
+        <a href="https://www.instagram.com/vibramas_tienda/" target="_blank" rel="noopener noreferrer" class="nav-link store-link" title="Ir a la Tienda Oficial en Instagram">Tienda ↗</a>
+        <a href="#contacto-canales" class="nav-link">Contacto</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="header-actions">
+        <!-- WhatsApp Header Pill -->
+        <a href="https://wa.me/5492262000000?text=Hola%20chicas%20de%20Vibra!%20Quiero%20conocer%20m%C3%A1s%20sobre%20las%20clases%20y%20actividades" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn-whatsapp-header" 
+           id="headerWhatsAppBtn">
+          <svg viewBox="0 0 24 24">
+            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.04 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.16 12.04 20.16C10.64 20.16 9.27 19.8 8.08 19.1L7.79 18.93L4.7 19.74L5.53 16.73L5.34 16.43C4.54 15.17 4.12 13.56 4.12 11.91C4.12 7.37 7.82 3.67 12.04 3.67ZM8.83 7.36C8.66 7.36 8.38 7.42 8.15 7.68C7.92 7.93 7.28 8.53 7.28 9.75C7.28 10.97 8.17 12.14 8.29 12.31C8.42 12.47 10.04 14.97 12.52 16.05C14.1 16.73 14.73 16.63 15.37 16.57C16.14 16.49 16.9 15.93 17.15 15.22C17.41 14.51 17.41 13.9 17.33 13.78C17.25 13.65 17.05 13.57 16.76 13.43C16.46 13.28 15.01 12.57 14.74 12.47C14.47 12.37 14.27 12.32 14.07 12.63C13.87 12.93 13.3 13.65 13.13 13.85C12.95 14.05 12.78 14.07 12.48 13.93C12.19 13.78 11.24 13.47 10.12 12.47C9.25 11.69 8.66 10.73 8.49 10.43C8.32 10.14 8.47 9.98 8.62 9.83C8.75 9.7 8.91 9.48 9.06 9.31C9.21 9.14 9.26 9.01 9.36 8.81C9.46 8.61 9.41 8.43 9.33 8.29C9.26 8.14 8.66 6.67 8.41 6.07C8.17 5.48 7.92 5.56 7.74 5.55C7.57 5.55 7.37 5.55 7.17 5.55"/>
+          </svg>
+          <span>Escribinos</span>
+        </a>
+
+        <!-- Mobile menu toggle -->
+        <button class="mobile-menu-btn" aria-label="Abrir menú" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =======================================================================
+         1. PORTADA / HERO SECTION
+         ======================================================================= -->
+    <section class="hero-section" id="inicio">
+      <div class="container hero-wrapper">
+        <!-- Hero Text & Quick Action -->
+        <div class="hero-content">
+          <h1 class="hero-brand-heading">VIBRA</h1>
+          <p class="hero-pillars-sub">MOVIMIENTO · BIENESTAR · PRESENCIA</p>
+          <p class="hero-description">
+            Una forma de habitar tu cuerpo, estés donde estés. Prácticas conscientes para transformar tu energía diaria.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#caminos" class="btn-hero-primary" id="btnConoceVibra">
+              <span>Conocé Vibra</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/vibramas_yoga/" target="_blank" rel="noopener noreferrer" class="btn-hero-secondary" title="Instagram Oficial Vibra Yoga">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+              <span>@vibramas_yoga</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Beach Visual with Signature Handwriting Accent -->
+        <div class="hero-visual">
+          <img src="assets/hero-woman-beach.jpg" alt="Práctica de yoga al atardecer en las playas de Necochea - Vibra" class="hero-image" loading="eager">
+          <div class="hero-script-overlay">
+            <span class="hero-script-text">Cuerpo<br>mente<br>vida más simple</span>
+            <div class="hero-script-line"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         2. QUÉ ENCONTRÁS EN VIBRA (4 CAMINOS CLAROS)
+         ======================================================================= -->
+    <section class="pillars-section" id="caminos">
+      <div class="container pillars-wrapper">
+        <!-- 4 Clear Pillars Grid -->
+        <div class="pillars-grid">
+          <!-- Pillar 1: Yoga -->
+          <article class="pillar-item">
+            <div class="pillar-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <!-- Lotus / Meditation Icon -->
+                <path d="M12 4c-1.5 4-4 6-8 7 4 1 6.5 3 8 7 1.5-4 4-6 8-7-4-1-6.5-3-8-7z"/>
+                <path d="M12 18c-3 1.5-6 1.5-8 0"/>
+                <path d="M12 18c3 1.5 6 1.5 8 0"/>
+              </svg>
+            </div>
+            <h3 class="pillar-title">YOGA</h3>
+            <p class="pillar-desc">Calma, enfoque<br>y equilibrio</p>
+          </article>
+
+          <!-- Pillar 2: Pilates -->
+          <article class="pillar-item">
+            <div class="pillar-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <!-- Mat / Roll icon -->
+                <ellipse cx="6" cy="12" rx="3.5" ry="6"/>
+                <path d="M6 6h12c2 0 3.5 2.7 3.5 6s-1.5 6-3.5 6H6"/>
+                <path d="M6 9h12"/>
+              </svg>
+            </div>
+            <h3 class="pillar-title">PILATES</h3>
+            <p class="pillar-desc">Fuerza, control<br>y vitalidad</p>
+          </article>
+
+          <!-- Pillar 3: Stretching -->
+          <article class="pillar-item">
+            <div class="pillar-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <!-- Sun / Energy icon -->
+                <circle cx="12" cy="12" r="4.5"/>
+                <line x1="12" y1="2" x2="12" y2="4.5"/>
+                <line x1="12" y1="19.5" x2="12" y2="22"/>
+                <line x1="2" y1="12" x2="4.5" y2="12"/>
+                <line x1="19.5" y1="12" x2="22" y2="12"/>
+                <line x1="4.9" y1="4.9" x2="6.7" y2="6.7"/>
+                <line x1="17.3" y1="17.3" x2="19.1" y2="19.1"/>
+                <line x1="4.9" y1="19.1" x2="6.7" y2="17.3"/>
+                <line x1="17.3" y1="6.7" x2="19.1" y2="4.9"/>
+              </svg>
+            </div>
+            <h3 class="pillar-title">STRETCHING</h3>
+            <p class="pillar-desc">Movilidad, flexibilidad<br>y bienestar</p>
+          </article>
+
+          <!-- Pillar 4: Movimiento desde cero -->
+          <article class="pillar-item">
+            <div class="pillar-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <!-- Leaf / Organic Beginnings icon -->
+                <path d="M12 21a9 9 0 0 0 9-9c0-6-6-9-9-9-3 0-9 3-9 9a9 9 0 0 0 9 9z"/>
+                <path d="M12 3v18"/>
+              </svg>
+            </div>
+            <h3 class="pillar-title">MOVIMIENTO DESDE CERO</h3>
+            <p class="pillar-desc">Para todos los cuerpos<br>y todas las etapas</p>
+          </article>
+        </div>
+
+        <!-- Handwritten Quote -->
+        <div class="pillars-quote-wrap">
+          <p class="pillars-quote-text">
+            Moverse<br>también es una<br>forma de cuidarse
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         3. QUIÉNES SOMOS (Joana & Yoshi)
+         ======================================================================= -->
+    <section class="about-section" id="quienes-somos">
+      <div class="container about-grid">
+        <!-- Photo with "Juntas hacemos Vibra" -->
+        <div class="about-photo-wrap">
+          <img src="assets/founder-photo-clean.png" alt="Joana y Yoshi creadoras de Vibra en la costa de Necochea" class="about-photo" loading="lazy">
+        </div>
+
+        <!-- Content & Philosophy -->
+        <div class="about-content">
+          <span class="overline">QUIÉNES SOMOS</span>
+          <h2 class="about-title">Joana & Yoshi</h2>
+          <p class="about-paragraph">
+            Somos dos apasionadas del movimiento, el bienestar y la vida consciente. Creamos Vibra para compartir prácticas que te acompañen en tu día a día, de forma simple, real y accesible.
+          </p>
+          <div class="about-actions">
+            <button class="btn-about-story" data-open-modal="modalStory">
+              <span>Conocé nuestra historia</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+            <a href="https://www.instagram.com/vibramas_yoga/" target="_blank" rel="noopener noreferrer" class="btn-link-instagram" title="Seguinos en Instagram">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+              <span>@vibramas_yoga</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         4. MOVIMIENTO DESDE CERO (Conexión Directa con YouTube)
+         ======================================================================= -->
+    <section class="youtube-gateway-section" id="movimiento-desde-cero">
+      <div class="container gateway-grid">
+        <!-- Text & Call to Action -->
+        <div class="gateway-content">
+          <span class="overline">EMPEZÁ HOY</span>
+          <h2 class="gateway-title">Movimiento desde cero</h2>
+          <p class="gateway-desc">
+            Una clase gratuita en YouTube para que descubras que nunca es tarde para empezar. Diseñada para despertar tu cuerpo con suavidad y confianza.
+          </p>
+          <div class="gateway-cta-row">
+            <button class="btn-watch-class" data-open-modal="modalVideo" id="btnVerClase">
+              <svg viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+              <span>Ver la clase</span>
+            </button>
+            <span class="gateway-script-callout">Tu primer paso también es Vibra</span>
+          </div>
+        </div>
+
+        <!-- Video Card Thumbnail Preview -->
+        <div class="video-card-preview" data-open-modal="modalVideo" title="Reproducir clase gratuita en YouTube">
+          <img src="assets/video-thumbnail.png" alt="Vista previa de la clase gratuita Movimiento desde Cero de Vibra en YouTube">
+          <div class="video-play-overlay" aria-label="Reproducir video">
+            <svg viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </div>
+          <div class="video-badge">35 MIN · CLASE COMPLETA GRATUITA</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         5. PROGRAMAS ESPECIALES (Movimiento para la vida real)
+         ======================================================================= -->
+    <section class="programs-section" id="metodo">
+      <div class="container programs-grid">
+        <!-- Capsules Information -->
+        <div class="programs-info">
+          <h2 class="programs-title">PROGRAMAS ESPECIALES</h2>
+          <p class="programs-subtitle">Cápsulas de movimiento pensadas para acompañar tu pasión.</p>
+          
+          <div class="programs-badges-grid">
+            <!-- Pádel -->
+            <div class="program-card" onclick="openWhatsAppTopic('programas')">
+              <div class="program-icon-circle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <!-- Racket icon -->
+                  <circle cx="10" cy="10" r="6"/>
+                  <path d="M14 14l6 6"/>
+                  <path d="M8 10h4M10 8v4"/>
+                </svg>
+              </div>
+              <span class="program-name">Pádel</span>
+              <span class="program-month">Septiembre</span>
+              <span class="program-status-tag">Lanzado</span>
+            </div>
+
+            <!-- Running -->
+            <div class="program-card" onclick="openWhatsAppTopic('programas')">
+              <div class="program-icon-circle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <!-- Running shoe / runner icon -->
+                  <path d="M4 17h11l3-5H7l-3 5z"/>
+                  <circle cx="17" cy="17" r="2"/>
+                  <circle cx="7" cy="17" r="2"/>
+                </svg>
+              </div>
+              <span class="program-name">Running</span>
+              <span class="program-month">Octubre</span>
+              <span class="program-status-tag">Disponible</span>
+            </div>
+
+            <!-- Natación -->
+            <div class="program-card" onclick="openWhatsAppTopic('programas')">
+              <div class="program-icon-circle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <!-- Waves / Swimmer icon -->
+                  <path d="M2 14c2-1 4-1 6 0s4 1 6 0 4-1 6 0"/>
+                  <path d="M2 18c2-1 4-1 6 0s4 1 6 0 4-1 6 0"/>
+                  <circle cx="12" cy="7" r="3"/>
+                </svg>
+              </div>
+              <span class="program-name">Natación</span>
+              <span class="program-month">Noviembre</span>
+              <span class="program-status-tag">Próximo</span>
+            </div>
+
+            <!-- Fútbol -->
+            <div class="program-card" onclick="openWhatsAppTopic('programas')">
+              <div class="program-icon-circle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <!-- Soccer ball icon -->
+                  <circle cx="12" cy="12" r="9"/>
+                  <polygon points="12 7 16 10 14 15 10 15 8 10"/>
+                </svg>
+              </div>
+              <span class="program-name">Fútbol</span>
+              <span class="program-month">Diciembre</span>
+              <span class="program-status-tag">Próximo</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coast Banner with Handwriting Overlay -->
+        <div class="programs-visual-card">
+          <img src="assets/coast-banner.png" alt="Paisaje de costa y dunas de Necochea - Movimiento para la vida real">
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         6. TIENDA VIBRA + CLASES ONLINE (Venta & E-Commerce Hub)
+         ======================================================================= -->
+    <section class="dual-hub-section" id="tienda">
+      <div class="container dual-hub-grid">
+        <!-- Card 1: Tienda Vibra -->
+        <article class="hub-card">
+          <div class="hub-card-content">
+            <h3 class="hub-card-title">TIENDA VIBRA</h3>
+            <p class="hub-card-desc">
+              Productos que te acompañan dentro y fuera de la sala. Mats, props, sprays aromáticos y velas de soja naturales.
+            </p>
+            <a href="https://www.instagram.com/vibramas_tienda/" target="_blank" rel="noopener noreferrer" class="btn-hub-action" id="btnVerTienda">
+              <span>Ver Tienda</span>
+              <svg viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+          <div class="hub-card-image-wrap">
+            <img src="assets/tienda-photo.png" alt="Productos aromáticos, velas y bienestar de Tienda Vibra" loading="lazy">
+          </div>
+        </article>
+
+        <!-- Card 2: Clases Online -->
+        <article class="hub-card" id="clases">
+          <div class="hub-card-content">
+            <h3 class="hub-card-title">CLASES ONLINE</h3>
+            <p class="hub-card-desc">
+              Practicá cuando y donde quieras. Accedé a clases grabadas, programas guiados y transmisiones en vivo.
+            </p>
+            <button class="btn-hub-action" onclick="openWhatsAppTopic('clases')">
+              <span>Explorar Clases</span>
+              <svg viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </div>
+          <div class="hub-card-image-wrap">
+            <img src="assets/clases-photo.png" alt="Meditación y clases online guiadas por Vibra" loading="lazy">
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         CANALES OFICIALES & SUGERENCIAS ESTRATÉGICAS DE CRECIMIENTO
+         (Requisitos 3, 4, 5, 6 del usuario)
+         ======================================================================= -->
+    <section class="growth-channels-section" id="contacto-canales">
+      <div class="container">
+        <div class="growth-header">
+          <span class="overline">CANALES & CONEXIÓN</span>
+          <h2 class="growth-title">Conectá con el Universo Vibra</h2>
+          <p class="growth-subtitle">
+            Canales directos para coordinar clases, compras en la tienda y propuestas corporativas.
+          </p>
+        </div>
+
+        <div class="channels-grid">
+          <!-- 1. WhatsApp Oficial (Req 5) -->
+          <div class="channel-card">
+            <div class="channel-icon-wrap whatsapp">
+              <svg viewBox="0 0 24 24">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.04 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.16 12.04 20.16C10.64 20.16 9.27 19.8 8.08 19.1L7.79 18.93L4.7 19.74L5.53 16.73L5.34 16.43C4.54 15.17 4.12 13.56 4.12 11.91C4.12 7.37 7.82 3.67 12.04 3.67ZM8.83 7.36C8.66 7.36 8.38 7.42 8.15 7.68C7.92 7.93 7.28 8.53 7.28 9.75C7.28 10.97 8.17 12.14 8.29 12.31C8.42 12.47 10.04 14.97 12.52 16.05C14.1 16.73 14.73 16.63 15.37 16.57C16.14 16.49 16.9 15.93 17.15 15.22C17.41 14.51 17.41 13.9 17.33 13.78C17.25 13.65 17.05 13.57 16.76 13.43C16.46 13.28 15.01 12.57 14.74 12.47C14.47 12.37 14.27 12.32 14.07 12.63C13.87 12.93 13.3 13.65 13.13 13.85C12.95 14.05 12.78 14.07 12.48 13.93C12.19 13.78 11.24 13.47 10.12 12.47C9.25 11.69 8.66 10.73 8.49 10.43C8.32 10.14 8.47 9.98 8.62 9.83C8.75 9.7 8.91 9.48 9.06 9.31C9.21 9.14 9.26 9.01 9.36 8.81C9.46 8.61 9.41 8.43 9.33 8.29C9.26 8.14 8.66 6.67 8.41 6.07C8.17 5.48 7.92 5.56 7.74 5.55C7.57 5.55 7.37 5.55 7.17 5.55"/>
+              </svg>
+            </div>
+            <h3 class="channel-name">WhatsApp Directo</h3>
+            <p class="channel-reason">
+              Atención inmediata y personalizada para responder dudas sobre horarios, abonos y pedidos de la tienda.
+            </p>
+            <button class="btn-channel-action" onclick="openWhatsAppTopic('general')">
+              <span>Abrir Chat</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <!-- 2. Email Oficial (Req 4) -->
+          <div class="channel-card">
+            <span class="channel-badge-suggested">Sugerido</span>
+            <div class="channel-icon-wrap email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <h3 class="channel-name">Contacto por Email</h3>
+            <p class="channel-reason">
+              Ideal para recibir propuestas institucionales, consultas detalladas y comprobantes de suscripción.
+            </p>
+            <button class="btn-channel-action" onclick="copyEmailToClipboard('hola@vibramovimiento.com.ar')">
+              <span>Copiar: hola@vibra...</span>
+            </button>
+          </div>
+
+          <!-- 3. LinkedIn Perfil (Req 3) -->
+          <div class="channel-card">
+            <span class="channel-badge-suggested">Estratégico</span>
+            <div class="channel-icon-wrap linkedin">
+              <svg viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </div>
+            <h3 class="channel-name">Perfil en LinkedIn</h3>
+            <p class="channel-reason">
+              Clave para posicionar <em>Vibra Corporativo</em>: pausas activas, programas de reducción del estrés y convenios con empresas.
+            </p>
+            <button class="btn-channel-action" data-open-modal="modalLinkedIn">
+              <span>Ver Propuesta B2B</span>
+            </button>
+          </div>
+
+          <!-- 4. Facebook Perfil / Fan Page (Req 6) -->
+          <div class="channel-card">
+            <span class="channel-badge-suggested">Comunidad</span>
+            <div class="channel-icon-wrap facebook">
+              <svg viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </div>
+            <h3 class="channel-name">Página en Facebook</h3>
+            <p class="channel-reason">
+              Gran alcance para el público local de Necochea, difusión de talleres presenciales y sincronización con Meta Tienda.
+            </p>
+            <button class="btn-channel-action" data-open-modal="modalFacebook">
+              <span>Ver Sugerencia</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =======================================================================
+       7. CIERRE & FOOTER
+       ======================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <!-- Top Row -->
+      <div class="footer-top-row">
+        <!-- Logo -->
+        <div class="footer-brand">
+          <svg class="brand-lotus-icon" viewBox="0 0 100 80" fill="none">
+            <path d="M50 8 C48 24 38 42 22 52 C36 50 46 36 50 8 Z" fill="currentColor"/>
+            <path d="M50 8 C52 24 62 42 78 52 C64 50 54 36 50 8 Z" fill="currentColor"/>
+            <path d="M50 2 C44 26 40 48 50 64 C60 48 56 26 50 2 Z" fill="currentColor"/>
+          </svg>
+          <div class="brand-text-block">
+            <span class="brand-name">V I B R A</span>
+            <span class="brand-tagline">MOVIMIENTO · BIENESTAR · PRESENCIA</span>
+          </div>
+        </div>
+
+        <!-- Handwritten Slogan -->
+        <div class="footer-script-banner">
+          Una comunidad que vibra
+        </div>
+
+        <!-- Social Channels Links -->
+        <div class="footer-social-wrap">
+          <!-- Instagram Yoga (Req 1) -->
+          <a href="https://www.instagram.com/vibramas_yoga/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Vibra Yoga Instagram">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+
+          <!-- Instagram Tienda (Req 2) -->
+          <a href="https://www.instagram.com/vibramas_tienda/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Tienda Vibra Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+              <line x1="3" y1="6" x2="21" y2="6"/>
+              <path d="M16 10a4 4 0 0 1-8 0"/>
+            </svg>
+          </a>
+
+          <!-- YouTube -->
+          <a href="#movimiento-desde-cero" class="social-icon-btn" title="Canal de YouTube Vibra" data-open-modal="modalVideo">
+            <svg viewBox="0 0 24 24">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+
+          <!-- WhatsApp -->
+          <a href="https://wa.me/5492262000000?text=Hola%20chicas%20de%20Vibra!" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="WhatsApp Vibra">
+            <svg viewBox="0 0 24 24">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2Z"/>
+            </svg>
+          </a>
+
+          <!-- Email (Req 4) -->
+          <a href="mailto:hola@vibramovimiento.com.ar" class="social-icon-btn" title="Email Oficial">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Bottom Row -->
+      <div class="footer-bottom-row">
+        <nav class="footer-links-nav" aria-label="Enlaces del pie">
+          <a href="#inicio" class="footer-link">Inicio</a>
+          <span>·</span>
+          <a href="#clases" class="footer-link">Clases</a>
+          <span>·</span>
+          <a href="#metodo" class="footer-link">Nuestro método</a>
+          <span>·</span>
+          <a href="#quienes-somos" class="footer-link">Quiénes somos</a>
+          <span>·</span>
+          <a href="https://www.instagram.com/vibramas_tienda/" target="_blank" rel="noopener noreferrer" class="footer-link">Tienda</a>
+          <span>·</span>
+          <a href="#contacto-canales" class="footer-link">Contacto</a>
+        </nav>
+
+        <div class="footer-location">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+          <span>Necochea, Argentina</span>
+        </div>
+
+        <div class="footer-copyright">
+          © 2026 Vibra. Todos los derechos reservados.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =======================================================================
+       FLOATING ACTION BUTTONS (WhatsApp Siempre Visible)
+       ======================================================================= -->
+  <a href="https://wa.me/5492262000000?text=Hola%20Joana%20y%20Yoshi!%20Quiero%20conocer%20m%C3%A1s%20sobre%20las%20clases%20de%20Vibra" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     class="floating-whatsapp" 
+     id="floatingWhatsApp" 
+     title="Escribinos por WhatsApp (Atención Inmediata)">
+    <svg viewBox="0 0 24 24">
+      <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.04 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.16 12.04 20.16C10.64 20.16 9.27 19.8 8.08 19.1L7.79 18.93L4.7 19.74L5.53 16.73L5.34 16.43C4.54 15.17 4.12 13.56 4.12 11.91C4.12 7.37 7.82 3.67 12.04 3.67ZM8.83 7.36C8.66 7.36 8.38 7.42 8.15 7.68C7.92 7.93 7.28 8.53 7.28 9.75C7.28 10.97 8.17 12.14 8.29 12.31C8.42 12.47 10.04 14.97 12.52 16.05C14.1 16.73 14.73 16.63 15.37 16.57C16.14 16.49 16.9 15.93 17.15 15.22C17.41 14.51 17.41 13.9 17.33 13.78C17.25 13.65 17.05 13.57 16.76 13.43C16.46 13.28 15.01 12.57 14.74 12.47C14.47 12.37 14.27 12.32 14.07 12.63C13.87 12.93 13.3 13.65 13.13 13.85C12.95 14.05 12.78 14.07 12.48 13.93C12.19 13.78 11.24 13.47 10.12 12.47C9.25 11.69 8.66 10.73 8.49 10.43C8.32 10.14 8.47 9.98 8.62 9.83C8.75 9.7 8.91 9.48 9.06 9.31C9.21 9.14 9.26 9.01 9.36 8.81C9.46 8.61 9.41 8.43 9.33 8.29C9.26 8.14 8.66 6.67 8.41 6.07C8.17 5.48 7.92 5.56 7.74 5.55C7.57 5.55 7.37 5.55 7.17 5.55"/>
+    </svg>
+    <span>Escribinos</span>
+  </a>
+
+  <!-- Ambient Sound Toggle (Atmospheric Relaxing Experience) -->
+  <button class="zen-audio-toggle" id="zenAudioBtn" title="Activar sonido relajante de olas de mar">
+    <svg viewBox="0 0 24 24">
+      <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+    </svg>
+    <span>Sonido Zen</span>
+  </button>
+
+  <!-- =======================================================================
+       MODALS INTERACTIVOS
+       ======================================================================= -->
+
+  <!-- Modal 1: YouTube Free Class -->
+  <div class="modal-backdrop" id="modalVideo" role="dialog" aria-modal="true" aria-labelledby="modalVideoTitle">
+    <div class="modal-dialog video-dialog">
+      <button class="modal-close-btn" data-close-modal aria-label="Cerrar video">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="video-container-responsive">
+        <iframe 
+          id="ytIframe"
+          src="https://www.youtube-nocookie.com/embed/inpok4MKVLM?enablejsapi=1" 
+          title="Vibra Más - Movimiento desde Cero Clase Completa" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div style="padding: 24px; background: #262923; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+        <div>
+          <h4 id="modalVideoTitle" style="color: #FFF; font-family: var(--font-serif); font-size: 1.4rem; margin-bottom: 4px;">Movimiento desde Cero</h4>
+          <p style="color: #B5BDB1; font-size: 0.88rem;">Tu primer paso también es Vibra · Práctica completa para principiantes</p>
+        </div>
+        <a href="https://wa.me/5492262000000?text=Hola%20chicas!%20Hice%20la%20clase%20de%20YouTube%20de%20Movimiento%20desde%20Cero%20y%20me%20encant%C3%B3" target="_blank" rel="noopener noreferrer" class="btn-whatsapp-header">
+          <span>Comentanos cómo te sentiste</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Historia de Joana & Yoshi -->
+  <div class="modal-backdrop" id="modalStory" role="dialog" aria-modal="true" aria-labelledby="modalStoryTitle">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" data-close-modal aria-label="Cerrar historia">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="modal-body">
+        <span class="overline">NUESTRO CAMINO</span>
+        <h3 id="modalStoryTitle" style="font-family: var(--font-serif); font-size: 2.4rem; color: var(--text-dark); margin-bottom: 16px;">
+          Juntas Hacemos Vibra
+        </h3>
+        <p style="font-size: 1.02rem; line-height: 1.7; color: var(--text-body); margin-bottom: 16px;">
+          Vibra nació a orillas del mar en <strong>Necochea</strong>, a partir de una convicción compartida: el movimiento no debe ser una exigencia inalcanzable ni una pose rígida, sino un refugio diario para reconectar con lo esencial.
+        </p>
+        <p style="font-size: 1.02rem; line-height: 1.7; color: var(--text-body); margin-bottom: 20px;">
+          Integrando <strong>Yoga, Pilates y Stretching</strong> con una mirada humana, creamos un método que se adapta a las etapas reales de cada persona. Creemos en movernos para habitar el cuerpo con amabilidad, mejorar la postura, aliviar tensiones y construir vitalidad duradera.
+        </p>
+        <div style="background: var(--bg-sage-light); padding: 18px 22px; border-radius: var(--radius-md); margin-bottom: 24px;">
+          <p style="font-family: var(--font-script); font-size: 1.8rem; color: var(--bg-sage-dark); line-height: 1.2;">
+            “No buscamos la postura perfecta, sino la presencia genuina en cada respiración.”
+          </p>
+          <span style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted); display: block; margin-top: 6px;">— Joana & Yoshi</span>
+        </div>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <a href="https://www.instagram.com/vibramas_yoga/" target="_blank" rel="noopener noreferrer" class="btn-hub-action">
+            <span>Seguir en Instagram</span>
+          </a>
+          <button class="btn-about-story" onclick="openWhatsAppTopic('clases')">
+            <span>Conversar con Joana & Yoshi</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Sugerencia LinkedIn (B2B / Corporativo) -->
+  <div class="modal-backdrop" id="modalLinkedIn" role="dialog" aria-modal="true" aria-labelledby="modalLinkedInTitle">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" data-close-modal aria-label="Cerrar modal">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="modal-body">
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+          <div class="channel-icon-wrap linkedin" style="margin: 0;">
+            <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </div>
+          <div>
+            <span class="overline" style="margin: 0;">PROPUESTA ESTRATÉGICA</span>
+            <h3 id="modalLinkedInTitle" style="font-family: var(--font-serif); font-size: 1.8rem; color: var(--text-dark);">
+              Vibra Corporativo en LinkedIn
+            </h3>
+          </div>
+        </div>
+        <p style="font-size: 0.98rem; line-height: 1.6; color: var(--text-body); margin-bottom: 16px;">
+          Tener presencia en LinkedIn permite a Vibra acceder al segmento de <strong>Bienestar Corporativo</strong>, ofreciendo:
+        </p>
+        <ul style="padding-left: 20px; font-size: 0.94rem; line-height: 1.7; color: var(--text-body); margin-bottom: 24px;">
+          <li><strong>Pausas Activas Virtuales y Presenciales:</strong> 15-20 minutos de stretching y respiración para colaboradores en oficina o trabajo remoto.</li>
+          <li><strong>Prevención de lesiones posturales:</strong> Talleres ergonómicos de espalda y cuello para empresas.</li>
+          <li><strong>Posicionamiento Profesional:</strong> Destacar las certificaciones y liderazgo de Joana & Yoshi ante directores de Recursos Humanos.</li>
+        </ul>
+        <button class="btn-hero-primary" onclick="openWhatsAppTopic('empresa')" style="width: 100%; justify-content: center;">
+          <span>Solicitar Dossier Corporativo por WhatsApp</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: Sugerencia Facebook -->
+  <div class="modal-backdrop" id="modalFacebook" role="dialog" aria-modal="true" aria-labelledby="modalFacebookTitle">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" data-close-modal aria-label="Cerrar modal">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="modal-body">
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+          <div class="channel-icon-wrap facebook" style="margin: 0;">
+            <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </div>
+          <div>
+            <span class="overline" style="margin: 0;">COMUNIDAD LOCAL</span>
+            <h3 id="modalFacebookTitle" style="font-family: var(--font-serif); font-size: 1.8rem; color: var(--text-dark);">
+              Página de Facebook & Eventos Locales
+            </h3>
+          </div>
+        </div>
+        <p style="font-size: 0.98rem; line-height: 1.6; color: var(--text-body); margin-bottom: 16px;">
+          En Necochea y la zona de la Costa Atlántica, una página de Facebook es un puente potente para:
+        </p>
+        <ul style="padding-left: 20px; font-size: 0.94rem; line-height: 1.7; color: var(--text-body); margin-bottom: 24px;">
+          <li><strong>Eventos de Facebook:</strong> Anunciar clases al atardecer en la playa, masterclasses de fin de semana y retiros.</li>
+          <li><strong>Integración con Meta Tienda:</strong> Sincronizar el catálogo de <em>Tienda Vibra</em> para vender productos con un clic en Facebook e Instagram a la vez.</li>
+          <li><strong>Llegar al público de 35 a 65+ años:</strong> Que busca activamente opciones de <em>Movimiento desde cero</em> y actividad física no lesiva.</li>
+        </ul>
+        <button class="btn-hub-action" data-close-modal style="width: 100%; justify-content: center;">
+          <span>Entendido</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Element -->
+  <div id="vibra-toast" class="toast-notice" role="alert"></div>
+
+  <!-- Interactive JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
